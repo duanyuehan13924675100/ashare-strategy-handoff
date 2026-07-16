@@ -1,0 +1,135 @@
+{
+  "schema_version": "phase5b2-s6-v1",
+  "trade_date": "2026-07-16",
+  "generated_at": "2026-07-16T01:53:43.989259+00:00",
+  "published_at": "2026-07-16T11:44:10.754597+08:00",
+  "run_id": "phase5b2-s4-2026-07-16-98fa2027df70",
+  "local_commit": "c7793e51e97094c169a75224aae3ea0578adce95",
+  "validation_status": "PASS",
+  "formal_validation_pass": true,
+  "timing_validation": true,
+  "timing_window_pass": true,
+  "snapshot_capture_pass": true,
+  "quote_request_count": 1,
+  "universe_count": 75,
+  "l1_count": 32,
+  "returned_count": 75,
+  "fresh_count": 73,
+  "missing_count": 0,
+  "stale_count": 2,
+  "suspended_count": 0,
+  "overall_fresh_coverage": 0.9733,
+  "l1_fresh_coverage": 0.9688,
+  "quote_time_min": "2026-07-16T01:49:29+00:00",
+  "quote_time_max": "2026-07-16T01:50:01+00:00",
+  "baseline_success_count": 74,
+  "baseline_missing_count": 1,
+  "intraday_volume_baseline_success_count": 73,
+  "trigger_distribution": {
+    "breakout_confirmed": 0,
+    "breakout_unconfirmed": 0,
+    "pullback_holding": 5,
+    "pullback_broken": 1,
+    "opening_strength": 0,
+    "opening_fade": 0,
+    "observe": 67,
+    "unavailable": 2
+  },
+  "intraday_focus": [
+    {
+      "symbol": "300502.SZ",
+      "name": "新易盛",
+      "label": "等待回踩确认",
+      "trigger_type": "pullback_holding",
+      "risk_flags": [
+        "MISSING_INTRADAY_TRIGGER"
+      ],
+      "evidence_summary": "trigger=pullback_holding; strength=medium; confirmation=确认支撑附近承接未继续转弱"
+    },
+    {
+      "symbol": "603019.SH",
+      "name": "中科曙光",
+      "label": "等待回踩确认",
+      "trigger_type": "pullback_holding",
+      "risk_flags": [
+        "MISSING_INTRADAY_TRIGGER"
+      ],
+      "evidence_summary": "trigger=pullback_holding; strength=medium; confirmation=确认支撑附近承接未继续转弱"
+    },
+    {
+      "symbol": "688120.SH",
+      "name": "华海清科",
+      "label": "等待回踩确认",
+      "trigger_type": "pullback_holding",
+      "risk_flags": [
+        "MISSING_INTRADAY_TRIGGER"
+      ],
+      "evidence_summary": "trigger=pullback_holding; strength=medium; confirmation=确认支撑附近承接未继续转弱"
+    },
+    {
+      "symbol": "000977.SZ",
+      "name": "浪潮信息",
+      "label": "重点观察",
+      "trigger_type": "observe",
+      "risk_flags": [
+        "MISSING_INTRADAY_TRIGGER"
+      ],
+      "evidence_summary": "trigger=observe; strength=low; confirmation=等待后续价格结构确认"
+    },
+    {
+      "symbol": "001309.SZ",
+      "name": "德明利",
+      "label": "风险回避",
+      "trigger_type": "observe",
+      "risk_flags": [
+        "BELOW_SUPPORT"
+      ],
+      "evidence_summary": "trigger=observe; strength=low; confirmation=确认支撑失效是否持续"
+    },
+    {
+      "symbol": "002130.SZ",
+      "name": "沃尔核材",
+      "label": "风险回避",
+      "trigger_type": "observe",
+      "risk_flags": [
+        "BELOW_SUPPORT"
+      ],
+      "evidence_summary": "trigger=observe; strength=low; confirmation=确认支撑失效是否持续"
+    },
+    {
+      "symbol": "002156.SZ",
+      "name": "通富微电",
+      "label": "重点观察",
+      "trigger_type": "observe",
+      "risk_flags": [
+        "MISSING_INTRADAY_TRIGGER"
+      ],
+      "evidence_summary": "trigger=observe; strength=low; confirmation=等待后续价格结构确认"
+    },
+    {
+      "symbol": "002281.SZ",
+      "name": "光迅科技",
+      "label": "风险回避",
+      "trigger_type": "observe",
+      "risk_flags": [
+        "BELOW_SUPPORT"
+      ],
+      "evidence_summary": "trigger=observe; strength=low; confirmation=确认支撑失效是否持续"
+    }
+  ],
+  "guard_data_status": "available",
+  "allowed_next_step": "允许盘中条件式观察",
+  "anomalies": [
+    {
+      "category": "stale_count",
+      "count": 2,
+      "symbol": null
+    },
+    {
+      "category": "minute_candles",
+      "count": 1,
+      "symbol": "688521.SH"
+    }
+  ],
+  "payload_hash": "a3ce004a3527807d7aba5b66756f7b524fa20c4171cfc75915f679d837997c62"
+}
